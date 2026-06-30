@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Projects Dashboard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body {
+            background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #a78bfa, #34d399);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+        }
+        .container {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1200px;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 2rem;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: white;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(167, 139, 250, 0.2);
+            border-color: rgba(167, 139, 250, 0.5);
+        }
+        .icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        .title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        .desc {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
+        }
+        .btn {
+            background: linear-gradient(135deg, #7c3aed, #4f46e5);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            font-weight: 600;
+            display: inline-block;
+            text-decoration: none;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 Local AI Dashboard</h1>
+    
+    <div class="container">
+        <!-- PrivateDocs RAG -->
+        <a href="http://localhost:8501" target="_blank" class="card">
+            <div class="icon">📘</div>
+            <div class="title">PrivateDocs RAG</div>
+            <div class="desc">Chat privately with your PDFs and notes using Groq LLM + ChromaDB.</div>
+            <div class="btn">Open App</div>
+        </a>
+
+        <!-- Movie Recommender -->
+        <a href="http://localhost:8502" target="_blank" class="card">
+            <div class="icon">🎬</div>
+            <div class="title">CineAI</div>
+            <div class="desc">Movie recommender system trained on 100K ratings using collaborative filtering.</div>
+            <div class="btn">Open App</div>
+        </a>
+
+        <!-- LightRAG -->
+        <a href="http://localhost:9621" target="_blank" class="card">
+            <div class="icon">🕸️</div>
+            <div class="title">LightRAG</div>
+            <div class="desc">Next-gen Knowledge Graph RAG. Visualize and query complex relationships.</div>
+            <div class="btn">Open App</div>
+        </a>
+    </div>
+
+</body>
+</html>
