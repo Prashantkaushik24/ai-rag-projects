@@ -1,0 +1,12 @@
+venv/
+.venv/
+.env
+chroma_db/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+lightrag-app/LightRAG/
+ml-100k/
+*.zip
