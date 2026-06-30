@@ -7,6 +7,5 @@ __pycache__/
 *.pyo
 *.pyd
 .DS_Store
-lightrag-app/LightRAG/
 ml-100k/
 *.zip
